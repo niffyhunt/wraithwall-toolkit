@@ -14,6 +14,8 @@ you.
 Every project is a standalone, `pip install`-able package with its own README, examples,
 tests, and CLI. **No dependency on the platform** — no Flask, no database, no secrets.
 
+![WraithWall Open-Source Toolkit architecture](docs/architecture.svg)
+
 ---
 
 ## The tools

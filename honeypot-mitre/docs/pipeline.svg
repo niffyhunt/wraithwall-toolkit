@@ -116,14 +116,14 @@
     <text x="512" y="278" fill="#5C5C57" font-size="10.5">crude by design: <tspan fill="#8A8A84">cat /etc/shadow</tspan> folds into recon, not credential_access (substring, not ML)</text>
     <!-- technique chips -->
     <g font-size="10.5">
-      <rect x="512" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="550" y="307" text-anchor="middle" fill="#C7C7C2">T1082</text>
+      <rect x="512" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="550" y="307" text-anchor="middle" fill="#C7C7C2">T1016</text>
       <rect x="594" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="632" y="307" text-anchor="middle" fill="#C7C7C2">T1033</text>
-      <rect x="676" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="714" y="307" text-anchor="middle" fill="#C7C7C2">T1016</text>
-      <rect x="758" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="796" y="307" text-anchor="middle" fill="#C7C7C2">T1057</text>
-      <rect x="840" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="878" y="307" text-anchor="middle" fill="#C7C7C2">T1595</text>
-      <rect x="922" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="960" y="307" text-anchor="middle" fill="#C7C7C2">T1592</text>
+      <rect x="676" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="714" y="307" text-anchor="middle" fill="#C7C7C2">T1057</text>
+      <rect x="758" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="796" y="307" text-anchor="middle" fill="#C7C7C2">T1082</text>
+      <rect x="840" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="878" y="307" text-anchor="middle" fill="#C7C7C2">T1592</text>
+      <rect x="922" y="292" width="76" height="22" rx="4" fill="#16191D" stroke="#2a3340"/><text x="960" y="307" text-anchor="middle" fill="#C7C7C2">T1595</text>
     </g>
-    <text x="512" y="336" fill="#8A8A84" font-size="10.5">Sys Info · Owner/User · Net Config · Process · Active Scanning · Host Recon</text>
+    <text x="512" y="336" fill="#8A8A84" font-size="10.5">Net Config · Owner/User · Process · Sys Info · Host Recon · Active Scanning</text>
     <text x="996" y="336" text-anchor="end" fill="#5C5C57" font-size="11">conf 0.85</text>
   </g>
 
@@ -186,7 +186,7 @@
     <text x="1100" y="250" fill="#8A8A84">src_ip</text>          <text x="1380" y="250" text-anchor="end" fill="#F4F4F2">203.0.113.10</text>
     <text x="1100" y="276" fill="#8A8A84">dominant_stage</text>  <text x="1380" y="276" text-anchor="end" fill="#4C8DFF">reconnaissance</text>
     <text x="1100" y="302" fill="#8A8A84">progression</text>     <text x="1380" y="302" text-anchor="end" fill="#C7C7C2">[reconnaissance]</text>
-    <text x="1100" y="328" fill="#8A8A84">techniques</text>      <text x="1380" y="328" text-anchor="end" fill="#C7C7C2">6 · T1082…T1592</text>
+    <text x="1100" y="328" fill="#8A8A84">techniques</text>      <text x="1380" y="328" text-anchor="end" fill="#C7C7C2">6 · T1016…T1595</text>
     <text x="1100" y="354" fill="#8A8A84">confidence</text>      <text x="1380" y="354" text-anchor="end" fill="#C7C7C2">0.85</text>
     <text x="1100" y="380" fill="#8A8A84">actor_label</text>     <text x="1380" y="380" text-anchor="end" fill="#C7C7C2">automated_scanner</text>
     <text x="1100" y="406" fill="#8A8A84">campaign_indicators</text><text x="1380" y="406" text-anchor="end" fill="#5C5C57">[ ]</text>
