@@ -1,5 +1,5 @@
 """Pytest bootstrap: make the package importable when running from a source
-checkout without an editable install (``pip install -e .`` is the supported
+checkout without a local install (``pip install .`` is the supported
 path; this is only a convenience for in-tree test runs)."""
 
 import os

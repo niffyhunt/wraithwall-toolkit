@@ -66,7 +66,7 @@ MITRE tactics: the standard ATT&CK enterprise tactic set (e.g.
 ## Install
 
 ```bash
-pip install -e .          # from a checkout
+pip install .               # from a checkout
 # runtime dependency: PyYAML>=6
 ```
 

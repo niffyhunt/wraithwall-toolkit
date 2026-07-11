@@ -22,9 +22,9 @@ tests, and CLI. **No dependency on the platform** — no Flask, no database, no 
 
 | Project | What it does | Install |
 |---|---|---|
-| **[canary-kit](canary-kit/)** | Mint, register, and detect **supply-chain canary tokens** — match an incoming beacon straight back to the token you planted. Pluggable storage, optional Redis. | `pip install -e canary-kit` |
-| **[honeypot-mitre](honeypot-mitre/)** | Turn raw **Cowrie honeypot logs** into structured **MITRE ATT&CK** techniques, a **deterministic score**, and **replay dedup** — no LLM required (it's an optional extra). | `pip install -e honeypot-mitre` |
-| **[dml-spec](dml-spec/)** | **Deception Markup Language** — a versioned, **HMAC-signed** spec for trap/canary config. Validate, sign, and verify so your deception is diffable and tamper-evident. | `pip install -e dml-spec` |
+| **[canary-kit](canary-kit/)** | Mint, register, and detect **supply-chain canary tokens** — match an incoming beacon straight back to the token you planted. Pluggable storage, optional Redis. | `cd canary-kit && pip install .` |
+| **[honeypot-mitre](honeypot-mitre/)** | Turn raw **Cowrie honeypot logs** into structured **MITRE ATT&CK** techniques, a **deterministic score**, and **replay dedup** — no LLM required (it's an optional extra). | `cd honeypot-mitre && pip install .` |
+| **[dml-spec](dml-spec/)** | **Deception Markup Language** — a versioned, **HMAC-signed** spec for trap/canary config. Validate, sign, and verify so your deception is diffable and tamper-evident. | `cd dml-spec && pip install .` |
 
 ---
 
@@ -32,17 +32,17 @@ tests, and CLI. **No dependency on the platform** — no Flask, no database, no 
 
 ```bash
 # 1. Canary Kit — mint a token, then detect its beacon
-cd canary-kit && pip install -e .
+cd canary-kit && pip install .
 canary-kit --registry demo.json mint internal-sdk 2.4.1 --type runtime
 # ...the token later beacons home from an environment you don't control:
 canary-kit --registry demo.json beacon <token-from-mint> --ip 198.51.100.23
 
 # 2. Honeypot → MITRE — raw cowrie log to scored, mapped sessions
-cd ../honeypot-mitre && pip install -e .
+cd ../honeypot-mitre && pip install .
 honeypot-mitre examples/sample_cowrie.json     # → per-session techniques + score + dedup key
 
 # 3. DML — validate, sign, and verify a deception document
-cd ../dml-spec && pip install -e .
+cd ../dml-spec && pip install .
 export DML_KEY="your-signing-key"
 dml validate examples/example_traps.yaml
 dml sign     examples/example_traps.yaml --key-env DML_KEY > signed.yaml
@@ -80,4 +80,5 @@ Use them, fork them, ship them. Attribution appreciated, not required.
 
 ---
 
-*Part of the [WraithWall](https://wraithwall.online) project · by [niffy_hunt](https://x.com/niffy_hunt) · [github.com/inboxBodyguard](https://github.com/inboxBodyguard)*
+*Part of the [WraithWall](https://wraithwall.online) project · by [niffy_hunt](https://x.com/niffy_hunt) · [wraithwall-toolkit on GitHub](https://github.com/niffyhunt/wraithwall-toolkit)*
+

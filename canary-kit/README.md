@@ -16,10 +16,10 @@ registration, and trigger-detection logic.
 ## Install
 
 ```bash
-pip install -e .
+pip install .
 # optional extras:
-pip install -e ".[redis]"   # inject your own redis client
-pip install -e ".[test]"    # pytest
+pip install ".[redis]"   # inject your own redis client
+pip install ".[test]"    # pytest
 ```
 
 Requires Python >= 3.10. The core has **zero third-party dependencies**.

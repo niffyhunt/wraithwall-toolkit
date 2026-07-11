@@ -22,9 +22,9 @@ default path is pure Python standard library.
 ## Install
 
 ```bash
-pip install honeypot-mitre
+pip install .
 # optional LLM enrichment (not required for anything below):
-pip install "honeypot-mitre[llm]"
+pip install ".[llm]"
 ```
 
 Requires Python ≥ 3.10.

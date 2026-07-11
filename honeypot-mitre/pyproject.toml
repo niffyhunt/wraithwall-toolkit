@@ -26,7 +26,9 @@ llm = ["anthropic"]
 
 [project.urls]
 Homepage = "https://wraithwall.online"
-Repository = "https://github.com/inboxBodyguard"
+Repository = "https://github.com/niffyhunt/wraithwall-toolkit"
+Documentation = "https://wraithwall.online/docs"
+"Bug Tracker" = "https://github.com/niffyhunt/wraithwall-toolkit/issues"
 
 [project.scripts]
 honeypot-mitre = "honeypot_mitre.__main__:main"
