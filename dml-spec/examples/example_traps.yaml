@@ -1,4 +1,4 @@
-dml_version: "0.2.0"
+dml_version: "0.3.0"
 platform: example-app
 namespace: production
 description: Sample DML document exercising several trigger and response types.

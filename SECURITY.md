@@ -10,7 +10,7 @@
 
 Email **contact@wraithwall.online** with:
 
-- Affected package (`canary-kit`, `honeypot-mitre`, or `dml-spec`)
+- Affected package (`canary-kit`, `honeypot-mitre`, `dml-spec`, or `wraithmesh`)
 - Steps to reproduce
 - Impact assessment
 
@@ -20,4 +20,4 @@ We aim to acknowledge reports within **72 hours**.
 
 ## Scope
 
-This policy covers the three MIT packages in this repository. The full WraithWall platform lives in [wraithwall](https://github.com/niffyhunt/wraithwall).
+This policy covers the four MIT packages in this repository (`canary-kit`, `honeypot-mitre`, `dml-spec`, `wraithmesh`). The full WraithWall platform lives in [wraithwall](https://github.com/niffyhunt/wraithwall).
