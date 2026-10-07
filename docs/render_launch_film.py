@@ -2,6 +2,8 @@
 """WraithWall OSS — Official 70s launch film (documentary · real UI · orbit open)."""
 from __future__ import annotations
 
+import os
+
 import asyncio
 import math
 import subprocess
@@ -17,7 +19,7 @@ FRAMES = int(FPS * FILM_DURATION)
 
 DOCS_DIR = Path(__file__).resolve().parent
 SCREEN_DIR = DOCS_DIR / "real-screens"
-STATIC_DIR = Path("/home/deploy/ezmcyber/static/img/oss-launch")
+STATIC_DIR = Path(os.environ.get("WW_OSS_STATIC_DIR", str(DOCS_DIR)))  # optional site publish target
 OUT_DIR = Path("/tmp/ww-film-frames")
 OUT_MP4 = Path("/tmp/wraithwall-oss-launch-film.mp4")
 AUDIO_DIR = Path("/tmp/ww-film-audio")

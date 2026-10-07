@@ -94,4 +94,4 @@ pip install -e ../honeypot-mitre -e ".[dev]"
 pytest
 ```
 
-MIT — © 2026 niffy_hunt · [wraithwall-toolkit](https://github.com/niffyhunt/wraithwall-toolkit)
+MIT — © 2026 Niffyhunt · [wraithwall-toolkit](https://github.com/niffyhunt/wraithwall-toolkit)

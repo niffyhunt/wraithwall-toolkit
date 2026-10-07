@@ -9,7 +9,7 @@ description = "Supply-chain canary token minting and beacon/trigger detection."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-authors = [{ name = "niffy_hunt" }]
+authors = [{ name = "Niffyhunt" }]
 keywords = ["canary", "supply-chain", "security", "honeytoken", "deception"]
 classifiers = [
     "Development Status :: 4 - Beta",

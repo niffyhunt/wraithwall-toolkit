@@ -2,6 +2,8 @@
 """WraithWall OSS launch video — real site screenshots synced to narration + ambient score."""
 from __future__ import annotations
 
+import os
+
 import math
 import subprocess
 from dataclasses import dataclass
@@ -18,7 +20,7 @@ OUT_MP4 = Path("/tmp/wraithwall-oss-launch.mp4")
 AUDIO_DIR = Path("/tmp/ww-oss-audio")
 DOCS_DIR = Path(__file__).resolve().parent
 SCREEN_DIR = DOCS_DIR / "real-screens"
-STATIC_DIR = Path("/home/deploy/ezmcyber/static/img/oss-launch")
+STATIC_DIR = Path(os.environ.get("WW_OSS_STATIC_DIR", str(DOCS_DIR)))  # optional site publish target
 
 # Nigerian English — natural young male African voice (alt: en-KE-ChilembaNeural, en-ZA-LukeNeural)
 TTS_VOICE = "en-NG-AbeoNeural"

@@ -9,7 +9,7 @@ description = "Structured MITRE ATT&CK mapping, a deterministic threat score, an
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-authors = [{ name = "niffy_hunt" }]
+authors = [{ name = "Niffyhunt" }]
 keywords = ["honeypot", "cowrie", "mitre", "attack", "threat-intelligence", "security"]
 classifiers = [
     "Development Status :: 4 - Beta",

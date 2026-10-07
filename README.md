@@ -20,12 +20,17 @@ tests, and CLI. **No dependency on the platform** — no Flask, no database, no 
 
 ## The tools
 
-| Project | What it does | Install |
-|---|---|---|
-| **[canary-kit](canary-kit/)** | Mint, register, and detect **supply-chain canary tokens** — match an incoming beacon straight back to the token you planted. Pluggable storage, optional Redis. | `cd canary-kit && pip install .` |
-| **[honeypot-mitre](honeypot-mitre/)** | Turn raw **Cowrie honeypot logs** into structured **MITRE ATT&CK** techniques, a **deterministic score**, and **replay dedup** — no LLM required (it's an optional extra). | `cd honeypot-mitre && pip install .` |
-| **[dml-spec](dml-spec/)** | **Deception Markup Language** — a versioned, **HMAC-signed** spec for trap/canary config. Validate, sign, and verify so your deception is diffable and tamper-evident. | `cd dml-spec && pip install .` |
-| **[wraithmesh](wraithmesh/)** | **Distributed sensor mesh** — tail Cowrie logs, collapse campaigns locally, uplink signed **equivalence-class observations** to corroborating aggregators. Privacy-preserving egress by default. | `cd honeypot-mitre && pip install . && cd ../wraithmesh && pip install .` |
+| Project | What it does | Install | PyPI |
+|---|---|---|---|
+| **[canary-kit](canary-kit/)** | Mint, register, and detect **supply-chain canary tokens** — match an incoming beacon straight back to the token you planted. Pluggable storage, optional Redis. | `pip install canary-kit` | **Published** 0.1.0 |
+| **[honeypot-mitre](honeypot-mitre/)** | Turn raw **Cowrie honeypot logs** into structured **MITRE ATT&CK** techniques, a **deterministic score**, and **replay dedup** — no LLM required (it's an optional extra). | `pip install honeypot-mitre` | **Published** 0.1.0 |
+| **[dml-spec](dml-spec/)** | **Deception Markup Language** — a versioned, **HMAC-signed** spec for trap/canary config. Validate, sign, and verify so your deception is diffable and tamper-evident. | `cd dml-spec && pip install .` | **v2** (0.2.0 ready, not uploaded yet) |
+| **[wraithmesh](wraithmesh/)** | **Distributed sensor mesh** — tail Cowrie logs, collapse campaigns locally, uplink signed **equivalence-class observations** to corroborating aggregators. Privacy-preserving egress by default. | `cd honeypot-mitre && pip install . && cd ../wraithmesh && pip install .` | **v2** (0.2.0 ready, not uploaded yet) |
+
+Related published packages outside this folder: **`wraithwall`** (platform), **`ravenscan`** (`raven` CLI).  
+HTTP API client will be **`wraithwall-sdk`** (still building; not this toolkit).
+
+See [PACKAGE_INVENTORY.md](PACKAGE_INVENTORY.md) for the full v2 release checklist.
 
 ---
 
@@ -82,7 +87,7 @@ See each project's README for the full API, CLI, and design notes.
 
 ## License
 
-All four projects are released under the [MIT License](LICENSE) — © 2026 niffy_hunt.
+All four projects are released under the [MIT License](LICENSE) — © 2026 Niffyhunt.
 Use them, fork them, ship them. Attribution appreciated, not required.
 
 ---

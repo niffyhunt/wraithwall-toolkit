@@ -9,7 +9,7 @@ description = "Deception Markup Language (DML) — a versioned, HMAC-signed sche
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-authors = [{ name = "niffy_hunt" }]
+authors = [{ name = "Niffyhunt" }]
 keywords = ["deception", "honeypot", "canary", "security", "dml", "hmac"]
 classifiers = [
     "Development Status :: 4 - Beta",

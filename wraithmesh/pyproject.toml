@@ -9,7 +9,7 @@ description = "Distributed deception sensor mesh — equivalence-class observati
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-authors = [{ name = "niffy_hunt" }]
+authors = [{ name = "Niffyhunt" }]
 keywords = ["deception", "honeypot", "cowrie", "threat-intelligence", "mesh", "telemetry"]
 classifiers = [
     "Development Status :: 3 - Alpha",

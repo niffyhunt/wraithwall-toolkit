@@ -23,7 +23,7 @@ Public API:
     I/O & building:
         load, loads, dump, dumps, to_dict, build_document
 
-Part of the WraithWall project — https://wraithwall.online · by niffy_hunt.
+Part of the WraithWall project — https://wraithwall.online · by Niffyhunt.
 """
 
 from __future__ import annotations

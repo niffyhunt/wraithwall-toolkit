@@ -4,7 +4,7 @@ Plant uniquely-derived canary tokens in software packages, then detect when one
 "fires" by matching an inbound beacon back to the issued token. Pure stdlib at
 its core; storage is pluggable (in-memory by default, optional injected Redis).
 
-Part of the WraithWall project — https://wraithwall.online · by niffy_hunt
+Part of the WraithWall project — https://wraithwall.online · by Niffyhunt
 """
 
 from __future__ import annotations

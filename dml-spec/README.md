@@ -235,8 +235,8 @@ can forge valid signatures.
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Copyright (c) 2026 niffy_hunt.
+MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Niffyhunt.
 
 ---
 
-Part of the WraithWall project — https://wraithwall.online · by niffy_hunt.
+Part of the WraithWall project — https://wraithwall.online · by Niffyhunt.

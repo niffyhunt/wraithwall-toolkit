@@ -2,7 +2,7 @@ dml_version: "0.3.0"
 platform: wraithwall-deception
 namespace: production
 description: Unified deception traps + WraithMesh sensor nodes for TIE corroboration.
-author: niffy_hunt
+author: Niffyhunt
 
 mesh_policy:
   tie_min_corroboration: 2
