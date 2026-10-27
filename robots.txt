@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# Google AI (Gemini, SGE)
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (used by many LLM training pipelines)
+User-agent: CCBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://wraithwall.online/sitemap.xml
